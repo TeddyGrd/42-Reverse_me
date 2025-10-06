@@ -1,0 +1,12 @@
+Methode utilise:
+
+- Verification du type de binaire : 'file level1'
+- Recherche de chaine visibles : 'string level1'
+- Analyse dynamique des appels libc et arguments : 'ltrace level1'
+
+le binaire appelle strcmp et compare l entree avec la chaine "__stack_check"
+
+ce qui donne comme mots de passe "__stack_check"
+
+a noter que "__stack_check" apparait lors de la recherche de chaine visible mais
+impossible de savoir si c est le mots de passe a ce moment la 
